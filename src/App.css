@@ -1,38 +1,380 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto+Slab:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  width: 100%;
+  /* max-height: 1000vh; */
+  background-color: #E4E9F7;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Navigation Bar */
+nav {
+  height: 70px;
+  width: 100%;
+  /* background-color: #4070F4; */
+  /* background-color: rgb(17, 15, 15); */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav .nav-bar {
+  position: relative;
+  height: 100%;
+  /* max-width: 1000px; */
+  width: 100%;
+  /* background-color: #4070F4; */
+  background-color: #000;
+  margin: 0 auto;
+  padding: 0 30px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+nav .nav-bar .logo {
+  position: relative;
+  /* top: 3px; */
+}
+
+nav .nav-bar .logo a {
+  letter-spacing: 2px;
+  font-size: 25px;
+  font-weight: 500;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.nav-bar .nav-links {
+  /* margin-top: 22px; */
+  margin-bottom: 0rem;
+  display: flex;
+}
+
+.nav-bar .nav-links li {
+  margin: 0 5px;
+  list-style: none;
+}
+
+.nav-links li a {
+  letter-spacing: 2px;
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.nav-links li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-bar .nav-log-in {
+  margin-bottom: 0.2rem;
+}
+
+.nav-bar .log-in li {
+  letter-spacing: 2px;
+  position: relative;
+  font-size: 17px;
+  background-color: #000;
+  color: #FFF;
+  list-style: none;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.nav-bar .log-in li a {
+  letter-spacing: 2px;
+  position: relative;
+  font-size: 17px;
+  font-weight: 400;
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 20px;
+}
+
+.nav-bar .log-in li a:hover {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.nav-links .active {
+  color: black;
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* Sliders */
+.carousel-item {
+  height: 90vh;
+  min-height: 300px;
+  background-size: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.carousel-item .carousel-caption {
+  bottom: 30px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.carousel-item h5 {
+  color: #FFF;
+  font-size: 40px;
+  font-weight: 200;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+.carousel-item p {
+  color: #FFF;
+  font-size: 25px;
+  font-family: 'Baloo Bhaina 2', cursive;
+}
+
+/* More in Home */
+.more {
+  margin: 50px 0px;
+  width: 100%;
+}
+
+.more .box {
+  /* background-color: #bdc9ec; */
+  /* display: flex; */
+  margin: 23px;
+  /* border: 2px solid black; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+.more h3 {
+  color: #4070F4;
+  letter-spacing: 8px;
+  text-align: center;
+  font-size: 65px;
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.more .content {
+  margin: 8px 20px;
+  padding-top: 4px;
+  width: auto;
+  display: flex;
+}
+
+.more .content .written {
+  width: 100%;
+}
+
+.more .content span {
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 50;
+  color: #FFF;
+  background-color: #4070F4;
+  display: inline-block;
+  border-radius: 20px;
+  margin: 10px 10px;
+  padding: 2px 15px;
+  width: 95%;
+}
+
+.more .content .content-img {
+  width: 40%;
+}
+
+.more .content .content-img img {
+  position: relative;
+  top: 17px;
+  height: 465px;
+  width: auto;
+  box-shadow: 20px 20px 8px #ccc;
+}
+
+/* Footer */
+footer {
+  background: #000;
   color: white;
+  position: relative;
+  padding: 10px 0px;
+  width: 100%;
+  height: 40px;
+  top: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+footer .center {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer .center p {
+  letter-spacing: 4px;
+}
+
+/* About */
+.about-content {
+  padding: 10px 100px;
+  height: 75vh;
+}
+
+.about-content p {
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 17px;
+}
+
+.about-content span {
+  color: #000;
+  letter-spacing: 1px;
+  font-size: 23px;
+}
+
+/* Log in and Sign up */ 
+.signup-block {
+  margin: 30px 200px;
+}
+
+.signup {
+  border-radius: 20px;
+  box-shadow: 15px 15px 12px cadetblue;
+  background-image: linear-gradient(to right, cadetblue , rgb(157, 205, 206));
+  padding: 30px 200px;
+}
+
+.signup span{
+  margin-bottom: 10px;
+  display: inline-block;
+  text-align: center; 
+  width: 100%;
+  height:auto;
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.signup label {
+  margin-left: 10px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.signup input {
+  letter-spacing: 1px;
+  border-radius: 20px;
+}
+
+.signup button {
+  letter-spacing: 1px;
+}
+
+.signup .sign-up button{
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 8px 0px;
+  border: none;
+  border-radius: 20px;
+  background-color: #000;
+  color: #FFF;
+}
+
+.signup .sign-up button:hover {
+  background-color: rgb(21, 19, 19);
+}
+
+.signup .for-login li {
+  list-style:none;
+}
+
+.signup .for-login li a{
+  padding-left: 5px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.signup .for-login .text{
+  color: #000;
+}
+
+.login-block {
+  height: 75vh;
+}
+
+/* Adopt */
+.adopt-container {
+  height: 100vh;
+}
+
+.adopt-more h1{
+  font-family: 'Baloo Bhaina 2', cursive;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.adopt-more p {
+  color: #000;
+  /* font-family: 'Baloo Bhaina 2', cursive; */
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+
+.card {
+  width: 18rem;;
+}
+
+.buy-content {
+  justify-content: space-evenly;
+}
+
+.card-body button{
+  background-color: rgb(15, 150, 155);
+  border: none;
+}
+
+.card-body button:hover{
+  background-color: rgb(123, 214, 217);
+}
+
+.report-container{
+  width: 70%;
+}
+
+.report-container span {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Baloo Bhaina 2', cursive;
+  letter-spacing: 1px;
+}
+
+.comment-info {
+  max-height: 500px;
+  overflow-y: scroll;
 }
