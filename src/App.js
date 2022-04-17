@@ -7,6 +7,7 @@ import { Buy } from './Pages/Buy';
 import { Lost } from './Pages/Lost';
 import { Blogs } from './Pages/Blogs';
 import { Report } from './Pages/Report';
+import { Donation } from './Pages/Donation';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
 import { Navbar } from './Components/Navbar';
@@ -25,6 +26,7 @@ function App() {
           <Route path="/lost" element = {<Lost/>} />
           <Route path="/blogs" element = {<Blogs/>} />
           <Route path="/report" element = {<Report/>} />
+          <Route path="/donate" element = {<Donation/>} />
           <Route path="/signup" element = {<Signup/>} />
           <Route path="/login" element = {<Login/>} />
           <Route path = "*" element = {<h1>Error ! PAGE NOT FOUND</h1>}/>

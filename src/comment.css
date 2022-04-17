@@ -5,23 +5,41 @@
     padding: 1rem;
   }
   
-  table {
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  th,
-  td {
-    border: 1px solid #ffffff;
-    text-align: left;
-    padding: 8px;
-    font-size: 17px;
-  }
-  
-  th {
-    background-color: rgb(174, 217, 243);
-  }
-  
-  td {
-    background-color: rgb(205, 235, 253);
-  }
+.list-item{
+  list-style: none;
+  color: #fff;
+  background-image: linear-gradient(to right, rgb(4, 116, 118), rgb(101, 201, 205));
+  padding: 5px 20px;
+  letter-spacing: 1px;
+  border-radius: 20px;
+}
+
+.comment-section {
+  padding: 5px 300px;
+  /* width: 100%; */
+  align-items: center;
+  justify-content: center;
+}
+
+.comment-section textarea {
+  /* width: 50%; */
+  border: 2px solid #000;
+  border-radius: 12px;
+}
+
+.comment-section h1 {
+  padding: 10px 50px;
+}
+
+.comment-btn button {
+  letter-spacing: 2px;
+  padding: 8px 30px;
+  background-color: #000;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.comment-btn button:hover {
+  background-color: rgb(41, 34, 34);
+}

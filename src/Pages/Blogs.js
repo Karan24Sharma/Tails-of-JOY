@@ -1,7 +1,36 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import "../comment.css";
 
+// To get data from localStorage
+const getLocalItems = () => {
+  let list = localStorage.getItem('list');
+  
+  if (list) {
+    return JSON.parse(localStorage.getItem('list'));
+  }
+  else {
+    return [];
+  }
+} 
+
 export const Blogs = () => {
+
+  const [comment, setComment] = useState("");
+  const [comments, setComments] = useState(getLocalItems());
+
+  const addComment = () => {
+    if (!comment) {
+    }
+    else {
+      setComments([...comments, comment]);
+      setComment('');
+    }
+  }
+
+  // adding data to local Storage 
+  useEffect(()=>{
+    localStorage.setItem('list', JSON.stringify(comments));
+  }, [comments]);
 
   return (
     <>
@@ -29,37 +58,29 @@ export const Blogs = () => {
         <hr />
 
         <div className="app-container comment-show">
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Comment</th>
-              </tr>
-            </thead>
-            <tbody>
-                <tr>
-                  <td>Random</td>
-                  <td>This is a comment</td>
-                </tr>
-            </tbody>
-          </table>
+          {
+            comments.map((elem, index)=>{
+              return (
+                <ul className="list-group" key = {index}>
+                  <li className="list-item">{elem}</li>
+                  </ul>
+              )
+            })
+          }
         </div>
-
         <hr />
 
         <div className="container comment-section">
           <h1>Add Comment Here</h1>
           <form>
           <div className="form-group mb-3">
-            <input type = "text" name="fullName" className="form-control"
-              placeholder="Name"/>
+            <textarea name="comment" className="form-control"
+              placeholder="#comment"
+              value = {comment}
+              onChange = {(e) => setComment(e.target.value)}/>
           </div>
-          <div className="form-group mb-3">
-            <input name="comment" className="form-control"
-              placeholder="#comment"/>
-          </div>
-          <div className="form-group">
-            <button type="submit" className="btn btn-primary">Add</button>
+          <div className="form-group comment-btn">
+            <button type="submit" onClick={addComment} className="btn btn-primary">Add</button>
           </div>
           </form>
         </div>

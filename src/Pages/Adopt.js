@@ -29,7 +29,7 @@ export const Adopt = () => {
               <li className="list-group-item"> <b>Breed</b> : Persian Cat</li>
             </ul>
             <div className="card-body text-center">
-              <button className="btn btn-primary adopt-btn">Read More</button>
+              <button className="btn btn-primary adopt-btn"><a href="https://naankuse.com/donate/adopt-an-animal/?gclid=EAIaIQobChMItYGL3omb9wIVDXZgCh36qgJ0EAAYAiAAEgJdofD_BwE" target="_blank" rel="noreferrer">Read More</a></button>
             </div>
           </div>
 
@@ -39,12 +39,12 @@ export const Adopt = () => {
               <h5 className="card-title adopt-name">Coco</h5>
             </div>
             <ul className="list-group list-group-flush text-center">
-            <li className="list-group-item"> <b>Id</b> : #2</li>
+              <li className="list-group-item"> <b>Id</b> : #2</li>
               <li className="list-group-item"> <b>Age</b> : 1 year</li>
               <li className="list-group-item"> <b>Breed</b> : Aspin</li>
             </ul>
             <div className="card-body text-center">
-              <button className="btn btn-primary adopt-btn">Read More</button>
+              <button className="btn btn-primary adopt-btn"><a href="https://naankuse.com/donate/adopt-an-animal/?gclid=EAIaIQobChMItYGL3omb9wIVDXZgCh36qgJ0EAAYAiAAEgJdofD_BwE" target="_blank" rel="noreferrer">Read More</a></button>
             </div>
           </div>
 
@@ -54,12 +54,12 @@ export const Adopt = () => {
               <h5 className="card-title adopt-name">Daisy</h5>
             </div>
             <ul className="list-group list-group-flush text-center">
-            <li className="list-group-item"> <b>Id</b> : #3</li>
+              <li className="list-group-item"> <b>Id</b> : #3</li>
               <li className="list-group-item"> <b>Age</b> : 13 months</li>
               <li className="list-group-item"> <b>Breed</b> : Maine Coon</li>
             </ul>
             <div className="card-body text-center">
-              <button className="btn btn-primary adopt-btn">Read More</button>
+              <button className="btn btn-primary adopt-btn"><a href="https://naankuse.com/donate/adopt-an-animal/?gclid=EAIaIQobChMItYGL3omb9wIVDXZgCh36qgJ0EAAYAiAAEgJdofD_BwE" target="_blank" rel="noreferrer">Read More</a></button>
             </div>
           </div>
 
@@ -69,12 +69,12 @@ export const Adopt = () => {
               <h5 className="card-title adopt-name">Neo</h5>
             </div>
             <ul className="list-group list-group-flush text-center">
-            <li className="list-group-item"> <b>Id</b> : #4</li>
+              <li className="list-group-item"> <b>Id</b> : #4</li>
               <li className="list-group-item"> <b>Age</b> : 3 months</li>
               <li className="list-group-item"> <b>Breed</b> : Pug</li>
             </ul>
             <div className="card-body text-center">
-              <button className="btn btn-primary">Read More</button>
+              <button className="btn btn-primary adopt-btn"><a href="https://naankuse.com/donate/adopt-an-animal/?gclid=EAIaIQobChMItYGL3omb9wIVDXZgCh36qgJ0EAAYAiAAEgJdofD_BwE" target="_blank" rel="noreferrer">Read More</a></button>
             </div>
           </div>
         </div>

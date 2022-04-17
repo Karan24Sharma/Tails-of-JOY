@@ -33,7 +33,7 @@ export const Report = () => {
               rows="2"
               placeholder="More about incident"></textarea>
           </div>
-          <div className="form-group text-center">
+          <div className="form-group text-center report-btn">
             <button type="submit" className="btn btn-primary">Report</button>
           </div>
         </div>

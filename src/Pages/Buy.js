@@ -4,7 +4,7 @@ import buy2 from '../img/buy2.jpg'
 import buy3 from '../img/buy3.jpg'
 import buy4 from '../img/buy4.jpg'
 import adopt1 from '../img/adopt1.jpg';
-import adopt2 from '../img/adopt2.jpg';
+import adopt2 from '../img/adopt2.jpg'; 
 
 export const Buy = () => {
   return (
@@ -12,9 +12,6 @@ export const Buy = () => {
       <div className=" my-5 container buy-container">
 
       <div className="buy-more container">
-
-          {/* <h1>Want to Buy ?</h1> */}
-          
 
         <div className="buy-content d-inline-flex flex-wrap">
 
